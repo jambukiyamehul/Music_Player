@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="music-player">
+
+            <!-- Top navigation -->
+            <nav>
+                <div class="circle">
+                    <span>&#10094;</span>
+                </div>
+                <div class="circle">
+                    <span>&#9776;</span>
+                </div>
+            </nav>
+
+            <!-- Song image -->
+            <img src="media/raanjhan.jpg" class="song-img" id="cover">
+
+            <!-- Song title -->
+            <h1 id="title">Raanjhan</h1>
+            <p id="artist">Singer - Parampara Tandon</p>
+
+            <!-- Audio element -->
+            <audio id="song"></audio>
+
+            <!-- Progress bar -->
+            <input type="range" value="0" id="progress">
+
+            <!-- Controls -->
+            <div class="controls">
+
+                <!-- Previous -->
+                <span id="prevBtn">&#9198;</span>
+
+                <!-- Play Pause -->
+                <span id="ctrlIcon" onclick="playPause()">&#9654;</span>
+
+                <!-- Next -->
+                <span id="nextBtn">&#9197;</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
